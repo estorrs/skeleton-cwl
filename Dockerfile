@@ -1,7 +1,8 @@
 FROM python:3.6-jessie
 
 # install packages
-RUN apt-get update && -y apt-get install vim
+RUN apt-get update && apt-get install -y \
+    vim
 
 # install conda
 # do not use conda if there are image size concerns.
